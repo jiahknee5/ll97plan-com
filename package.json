@@ -1,0 +1,45 @@
+{
+  "name": "ll97plan-com",
+  "version": "1.0.0",
+  "description": "NYC Local Law 97 Compliance Platform - Professional building assessment and compliance tools",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'Build complete - ready for production'",
+    "test": "node test-fixes.js",
+    "test:calculator": "node test-fixes.js calculator",
+    "test:contact": "node test-fixes.js contact",
+    "test:retrofit": "node test-fixes.js retrofit",
+    "vercel-build": "echo 'Vercel build complete'"
+  },
+  "keywords": [
+    "nyc",
+    "local-law-97",
+    "building-compliance",
+    "energy-efficiency",
+    "carbon-emissions",
+    "retrofit",
+    "calculator"
+  ],
+  "author": "LL97Plan.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "express-rate-limit": "^6.10.0",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ll97plan-com.git"
+  }
+}

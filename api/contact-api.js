@@ -13,13 +13,17 @@ const contactLimiter = rateLimit({
     message: 'Too many contact form submissions, please try again later.'
 });
 
-// Email transporter configuration
+// Email transporter configuration for Microsoft/Outlook
 const transporter = nodemailer.createTransporter({
-    // Configure with your email service
-    service: 'gmail', // or your email provider
+    host: 'smtp-mail.outlook.com',
+    port: 587,
+    secure: false, // true for 465, false for other ports
     auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS
+    },
+    tls: {
+        ciphers: 'SSLv3'
     }
 });
 

@@ -23,11 +23,5 @@
       "src": "/(.*)",
       "dest": "/public/$1"
     }
-  ],
-  "env": {
-    "SMTP_USER": "@smtp_user",
-    "SMTP_PASS": "@smtp_pass",
-    "FROM_EMAIL": "@from_email",
-    "TO_EMAIL": "@to_email"
-  }
+  ]
 }
